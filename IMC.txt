@@ -1,0 +1,14 @@
+calculate_imc <- function(weight, height) {
+  imc <- weight / height^2
+  return(imc)
+}
+
+weight <- readline(prompt = "Type your weight in kg: ")
+weight <- as.numeric(weight)
+
+height <- readline(prompt = "Type your height in meters: ")
+height <- as.numeric(height)
+
+imc <- calculate_imc(weight, height)
+
+cat("Your IMC is:", imc)
